@@ -50,20 +50,13 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<script>
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $("#header");
-    $nav.attr('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
-</script>
+
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
+				<header id="header" class="navbar-fixed-top">
 
 					<h1 id="logo"><a href="index.html"><font size="24">CODEUINO</font></a></h1>
 
@@ -205,6 +198,14 @@ $(function () {
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+			$(function () {
+  			$(document).scroll(function () {
+    			var $nav = $(".navbar-fixed-top");
+    			$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  		});
+		});
+			</script>
 
 	</body>
 </html>
