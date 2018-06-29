@@ -17,9 +17,9 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<meta name="google-site-verification" content="wmX_rp7rwzGdrEjgCXZtDiI48tNondeszX_a5kYTyUs" />
-		
+
 		 <!-- Google Knowledge Graph card -->
-        <script type='application/ld+json'> 
+        <script type='application/ld+json'>
             {
               "@context": "http://www.schema.org",
               "@type": "Organization",
@@ -30,9 +30,9 @@
               "areaServed": "Worldwide",
               "foundingDate": "June 2018",
               "description": "Its been long that we have been spreading the word Open Source but now its time to put all sayings on action. I am Open Source Initiative member and would love to discuss this with you that we are building up an organisation named as CODEUINO after interacting with lots of people around the globe."
-            } 
+            }
         </script>
-		
+
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
@@ -49,8 +49,15 @@
 <link rel="manifest" href="/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">		
-		
+<meta name="theme-color" content="#ffffff">
+<script>
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("#header");
+    $nav.attr('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+</script>
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -116,6 +123,7 @@
 						<header>
 							<h2>About Us</h2>
 							<p>Well, it’s been long that we have been spreading the word “Open Source” across the globe but now it’s time to put are saying on Actions. So, we are currently running up an Organisation named as “CODEUINO” after interacting with lots of people including potential contributors around the world. It is a non-profit organisation that helps to bring amazing people together to create, develop, design and make things with Open Technologies and share work for the benefit of all.</p>
+							<a href="https://twitter.com/codeuino?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @codeuino</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                         </header></div>
 
@@ -133,7 +141,7 @@
 						</header>
 						<header class="major">
 							<h3>Contributor Tracker</h3>
-							<p>Many organisations lose their potential contributors because either the contributor finds difficulty in that or does not get an appropriate path. 
+							<p>Many organisations lose their potential contributors because either the contributor finds difficulty in that or does not get an appropriate path.
 								So, we have come up with a badge which will appear on Contributor profile for indicating the level of contributions made by the particular individual.</p>
 						</header>
 						<footer class="major">
@@ -170,7 +178,7 @@
       <p class="count-text ">SomeText GoesHere</p>
     </div>
 </div>
-            </section>			
+            </section>
 <div></div>
 
 			<!-- Footer -->
